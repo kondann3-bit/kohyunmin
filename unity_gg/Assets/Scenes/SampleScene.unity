@@ -271,10 +271,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   playerName: Player
-  hp: 100
+  hp: 60
+  lives: 3
   moveSpeed: 5
   jumpPower: 8
+  fallLimit: -10
+  startPosition: {x: 0, y: 0, z: 0}
   visual: {fileID: 733258232}
+  airScale: {x: 0.8, y: 1.2}
 --- !u!1 &70099044
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +383,7 @@ GameObject:
   - component: {fileID: 165332106}
   m_Layer: 0
   m_Name: ground (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -635,7 +639,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.19, y: 0, z: -10}
+  m_LocalPosition: {x: -2.19, y: 2.26, z: -10}
   m_LocalScale: {x: 8.810505, y: 5.0345745, z: 5.0345745}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -654,7 +658,7 @@ GameObject:
   - component: {fileID: 563225296}
   m_Layer: 0
   m_Name: ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -919,7 +923,7 @@ GameObject:
   - component: {fileID: 1260290379}
   m_Layer: 0
   m_Name: ground (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1057,7 +1061,7 @@ GameObject:
   - component: {fileID: 1267521432}
   m_Layer: 0
   m_Name: ground (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1176,7 +1180,7 @@ Transform:
   m_GameObject: {fileID: 1267521431}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.47, y: 2.02, z: 0}
+  m_LocalPosition: {x: -6.38, y: -0.53, z: 0}
   m_LocalScale: {x: 0.1375, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1377,7 +1381,7 @@ GameObject:
   - component: {fileID: 1591349571}
   m_Layer: 0
   m_Name: ground (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1496,7 +1500,7 @@ Transform:
   m_GameObject: {fileID: 1591349570}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.09, y: 0.44, z: 0}
+  m_LocalPosition: {x: -1.44, y: 1.48, z: 0}
   m_LocalScale: {x: 0.1375, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1515,7 +1519,7 @@ GameObject:
   - component: {fileID: 1643235560}
   m_Layer: 0
   m_Name: ground (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1757,7 +1761,7 @@ Transform:
   m_GameObject: {fileID: 1924057608}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.19267163, w: 0.98126334}
-  m_LocalPosition: {x: 0, y: 0.27759585, z: 0}
+  m_LocalPosition: {x: -0.3, y: 0.4, z: 0}
   m_LocalScale: {x: 0.6552899, y: 2.2060745, z: 0.65529}
   m_ConstrainProportionsScale: 0
   m_Children: []
